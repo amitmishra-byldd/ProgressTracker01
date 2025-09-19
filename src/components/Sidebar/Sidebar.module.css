@@ -1,0 +1,34 @@
+.sidebar{
+  width: 268px;
+  background-color: #1C2127;
+  color: white;
+}
+
+.sidebarItems{
+  padding-block-start: 176px;
+  margin-inline-start: 24px;
+}
+
+.link{
+  padding: 12px 20px;
+  font-family: 'Outfit';
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-block: 24px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  margin: ;
+}
+
+.linkIcon{
+  font-size: 24px;
+}
+
+.link:hover{
+  border-radius: 15px 0 0 15px;
+  background-color: #F1F1F5;
+  color: #1C2127;
+}

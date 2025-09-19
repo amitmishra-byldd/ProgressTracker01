@@ -1,0 +1,38 @@
+.fileSection{
+  width: 230px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #CCE9CE;
+  padding: 14px 9px 9px 9px;
+  position: relative;
+  font-weight: 'Outfit';  
+}
+
+.file{
+  font-size: 68px;
+}
+
+.fileName{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  text-wrap: nowrap;
+}
+
+.fileType{
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #A3A6AC;
+}
+
+.fileSize{
+  position: absolute;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 4px 6px ;
+  background-color: white;
+  border-radius: 20px;
+  right: 5px;
+  bottom: 5px;
+}

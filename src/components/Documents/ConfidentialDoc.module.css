@@ -1,0 +1,52 @@
+.title{
+  font-family: 'Outfit';
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 59px;
+}
+
+.docsGrid{
+  margin-inline-start: 35px ;
+  margin-block-end: 24px;
+}
+
+.gridHeadings{
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.track{
+  width: 45px;
+  height: 18px;
+  background-color: rgba(0, 146, 8, 0.4) ;
+  border-radius: 9px;
+}
+
+.circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 146, 8, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.circleClick{
+  transform: translateX(20px);
+}
+
+.circleNotClick{
+  transform: translateX(0);
+}
+
+.folderSection{
+  margin-block-start: 24px;
+}

@@ -1,0 +1,17 @@
+.title{
+  font-family: 'Outfit';
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 500;
+  margin-block: 20px 16px;
+}
+
+.infoSection{
+  padding: 46px;
+  border: 1px solid #D1D2D6;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

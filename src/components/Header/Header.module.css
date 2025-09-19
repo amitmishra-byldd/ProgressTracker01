@@ -1,0 +1,56 @@
+.headerSection{
+  width: 1081px;
+  margin-inline: auto;
+}
+
+.header{
+  width: 1081px;
+  height: 36px;
+  margin-block: 50px 42px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.companyTitle{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: 'Outfit';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  color: #171A1F;
+}
+
+.titleTag{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  color: #7f7f7f;
+  padding-top:7px;
+}
+
+.listItems{
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.profileList{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.label{
+  position: absolute;
+  top: -0;
+  right: -2;
+  background-color: rgba(54, 150, 54, 0.953);
+  color: white;
+  font-size: 7px;
+  padding: 5px;
+  border-radius: 100%;
+}
