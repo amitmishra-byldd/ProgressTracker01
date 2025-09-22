@@ -152,7 +152,7 @@ export default function PublicInfromation() {
           {/* Passing data in InfoSection Component */}
           <InfoSection title="About the business" showParagraph={true} />
 
-          <div className="grid grid-cols-3 gap-[25px]">
+          <div className="grid grid-cols-2 justify-between gap-[25px] md:grid-cols-4 lg:grid-cols-4">
             {/* Passing data in Items Component */}
             {itemsInfo.map((items) => (
               <li key={items.id}>
@@ -187,7 +187,7 @@ export default function PublicInfromation() {
           <InfoSection title="Company Overview" showParagraph={false} />
 
 
-          <div className="grid grid-cols-4 gap-[25px]">
+          <div className="grid grid-cols-2 justify-between gap-[25px] md:grid-cols-3 lg:grid-cols-4">
             {/* Passing data in Items Component */}
             {overviewItems.map((items) => (
               <li key={items.id}>
@@ -210,7 +210,7 @@ export default function PublicInfromation() {
           <InfoSection title="Market Analysis" showParagraph={false} />
 
 
-          <div className="grid grid-cols-4 gap-[25px]">
+          <div className="grid grid-cols-2 gap-[25px] md:grid-cols-3 lg:grid-cols-4">
             {/* Passing data in Items Component */}
             {businessDetails.map((items) => (
               <li key={items.id}>
@@ -234,7 +234,7 @@ export default function PublicInfromation() {
           <InfoSection title="Business Details" showParagraph={false} />
 
 
-          <div className="grid grid-cols-4 gap-[25px]">
+          <div className="grid grid-cols-2 gap-[25px] md:grid-cols-3 lg:grid-cols-4">
             {/* Passing data in Items Component */}
             {marketAnalysis.map((items) => (
               <li key={items.id}>

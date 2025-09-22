@@ -15,12 +15,12 @@ export default function ConfidentialDoc() {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <div className="mt-[24px] mb-[16px]">
+    <div className={styles.confidentialSection}>
       <span className={styles.title} >Confidential Documents</span>
 
       <div className={styles.docsGrid}>
         <div className={styles.gridHeadings}>
-          <span className={styles.gridTile}>Request Permission to view confidential data ⓘ</span>
+          <span className={styles.titledesc}>Request Permission to view confidential data ⓘ</span>
           <div className={styles.toggle}>
             <span className={styles.track}></span>
             <span onClick={() => setToggle(!toggle)} className={`${styles.circle} ${toggle ? styles.circleClick : styles.circleNotClick}`}></span>
@@ -28,9 +28,9 @@ export default function ConfidentialDoc() {
         </div>
 
 
-        <span className='h-[150px] transition-all duration-300 ease-in-out '>
+        <span className='h-[150px] transition-all duration-300 ease-in-out mb-[20px]'>
 
-        {toggle && <div className={`${styles.folderSection} flex justify-between`}>
+        {toggle && <div className={`${styles.folderSection} flex justify-around flex-wrap gap-[20px]`}>
          {Documents.map((items) => (
           <li key={items.id} >
             <Doc fileName={items.fileName} size={items.size}/>

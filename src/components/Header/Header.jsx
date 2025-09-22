@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import styles from "../Header/Header.module.css";
 import { IoNotificationsOutline } from "react-icons/io5";
@@ -5,16 +6,18 @@ import { FiMessageSquare } from "react-icons/fi";
 import Video from "../VideoSection/Video";
 import PublicInfromation from "../PublicInformation/PublicInfromation";
 import ConfidentialDoc from "../Documents/ConfidentialDoc";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 // import Link from "next/link";
 
 const ProfileMenu = [
-  { id: 1, icon: <IoNotificationsOutline />, label: "" },
-  { id: 2, icon: <FiMessageSquare />, label: "16" },
+  { id: 1, icon: <IoNotificationsOutline />},
+  { id: 2, icon: <FiMessageSquare />},
 ];
 
 
 
-export default function Header() {
+export default function Header({toggleSidebar}) {
   return (
     <div className={styles.headerSection}>
       <div className={styles.header}>
@@ -23,21 +26,26 @@ export default function Header() {
           <p className={styles.titleTag}>added 4 month ago</p>
         </div>
 
-        <div className={styles.listItems}>
+        <div className={styles.listStyles}>
+          <ul className={styles.listItems}>
           {ProfileMenu.map((items) => (
             <li key={items.id} className={styles.profileList}>
-              <span className={`${styles.icon} text-[23px] pt-[6px]`}>
+              <span className={styles.icon}>
                 {items.icon}
               </span>
-              <p className={styles.label}>{items.label}</p>
             </li>
           ))}
+        </ul>
+        <span className={styles.toggleSidebar}  onClick={toggleSidebar}><GiHamburgerMenu /></span>
         </div>
+
       </div>
 
-      <Video />
+
+
+      {/* <Video />
       <PublicInfromation />
-      <ConfidentialDoc />
+      <ConfidentialDoc /> */}
     </div>
   );
 }

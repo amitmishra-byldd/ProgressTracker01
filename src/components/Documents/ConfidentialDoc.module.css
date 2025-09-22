@@ -1,3 +1,4 @@
+
 .title{
   font-family: 'Outfit';
   font-weight: 500;
@@ -49,4 +50,40 @@
 
 .folderSection{
   margin-block-start: 24px;
+}
+
+/* Tablet Design */
+
+@media (min-width: 641px) and (max-width: 1024px)
+{
+  .title{
+    margin-block-start: 45px;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .title{
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  .titledesc{
+    font-size: 10px;
+  }
+
+  .track{
+    width: 25px;
+  height: 12px
+  }
+  .circle{
+    width: 16px;
+    height: 16px;
+  }
+  .circleClick{
+    transform: translateX(12px);
+  }
+  .docsGrid{
+    margin-inline-start: 10px;
+  }
 }

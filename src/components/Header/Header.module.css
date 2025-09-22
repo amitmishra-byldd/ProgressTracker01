@@ -1,18 +1,25 @@
-.headerSection{
-  width: 1081px;
+.headerSection {
+  width: 100%;
   margin-inline: auto;
 }
 
-.header{
-  width: 1081px;
-  height: 36px;
-  margin-block: 50px 42px;
+.header {
+  width: 100%;
+  background-color: #F1F1F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 130px;
+  margin-block: 0 42px;
+  padding-inline: 20px;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+  z-index: 10;
+
 }
 
-.companyTitle{
+.companyTitle {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -21,36 +28,106 @@
   font-size: 32px;
   line-height: 36px;
   color: #171A1F;
+  margin-inline-start: 268px;
 }
 
-.titleTag{
+.titleTag {
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 14px;
   color: #7f7f7f;
-  padding-top:7px;
+  padding-top: 7px;
 }
 
-.listItems{
+.listStyles {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 23px;
+  cursor: pointer;
+}
+
+.listItems {
   display: flex;
   align-items: center;
   gap: 23px;
+  
 }
 
-.profileList{
+.toggleSidebar {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggleSidebar:hover {
+  color: red;
+}
+
+.profileList {
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
 }
 
-.label{
-  position: absolute;
-  top: -0;
-  right: -2;
-  background-color: rgba(54, 150, 54, 0.953);
-  color: white;
-  font-size: 7px;
-  padding: 5px;
-  border-radius: 100%;
+
+
+/* design for medium screen (tablet) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  
+
+  .header {
+    height: 110px;
+    margin-inline-start: 0;
+  }
+
+  .toggleSidebar {
+    display: block;
+  }
+
+  .companyTitle {
+    gap: 12px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-inline-start: 0;
+  }
+
+  .listStyles{
+    font-size: 20px;
+  }
+}
+
+/* design for small screen (mobile) */
+@media (max-width: 640px) {
+
+
+  .header {
+    height: 90px;
+    margin-inline-start: 0;
+  }
+
+  .companyTitle {
+    gap: 12px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 25px;
+    white-space: nowrap;
+    margin-inline-start: 0;
+  }
+
+  .titleTag {
+    display: none;
+  }
+
+  .listStyles {
+    font-size: 16px;
+  }
+
+  .toggleSidebar {
+    display: block;
+  }
 }

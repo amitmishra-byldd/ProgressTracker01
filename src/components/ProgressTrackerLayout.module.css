@@ -1,0 +1,23 @@
+@media (min-width: 1024px){
+  .content{
+  margin-inline: 290px 30px;
+  
+}
+}
+
+
+/* Tablet Design */
+
+@media (min-width: 641px) and (max-width: 1024px){
+  .content{
+    margin-inline: 30px;
+  }
+}
+
+/* Mobile Design */
+
+@media (max-width: 640px) {
+  .content{
+  margin-inline: 20px;
+}
+}

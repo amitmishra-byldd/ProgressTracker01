@@ -20,7 +20,6 @@
 }
 
 .fileType{
-
   font-size: 12px;
   line-height: 16px;
   color: #A3A6AC;
@@ -35,4 +34,33 @@
   border-radius: 20px;
   right: 5px;
   bottom: 5px;
+}
+
+
+
+/* 
+  * Mobile Design 
+   */
+
+@media (max-width: 640px) {
+
+  .fileSection{
+    width: 130px;
+    height: 100px;
+  }
+  .file{
+  font-size: 38px;
+}
+.fileName{
+  font-size: 7px;
+}
+.fileType{
+  font-size: 7px;
+}
+.fileSize{
+  padding: 4px;
+  line-height: 10px;
+  border-radius: 5px;
+  font-size: 6px;
+}
 }

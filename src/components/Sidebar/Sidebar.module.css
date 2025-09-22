@@ -2,6 +2,11 @@
   width: 268px;
   background-color: #1C2127;
   color: white;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  z-index:20;
 }
 
 .sidebarItems{
@@ -20,7 +25,6 @@
   margin-block: 24px;
   font-weight: 400;
   transition: all 0.3s ease;
-  margin: ;
 }
 
 .linkIcon{
@@ -31,4 +35,32 @@
   border-radius: 15px 0 0 15px;
   background-color: #F1F1F5;
   color: #1C2127;
+}
+
+
+/* for small screen (mobile and tablets) */
+
+@media (max-width: 1023px) {
+  .sidebar {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    height: auto;
+    z-index: 50;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    position: fixed;
+
+  }
+
+  .sidebarItems{
+    padding-block-start: 20px;
+    padding-inline-end: 24px;
+  }
+
+  .link:hover{
+  border-radius: 15px;
+  background-color: #F1F1F5;
+  color: #1C2127;
+}
 }

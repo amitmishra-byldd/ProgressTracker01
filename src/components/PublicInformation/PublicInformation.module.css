@@ -15,3 +15,43 @@
   flex-direction: column;
   gap: 24px;
 }
+
+/* 
+ * Tablet Design
+ */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+   
+  .title{
+  font-size: 36px;
+  line-height: 40px;
+  margin-block-start: 40px;
+}
+
+.infoSection{
+  padding-block: 26px 40px;
+}
+}
+
+/* 
+ * Mobile Design
+ */
+
+@media (max-width: 640px) {
+  
+  .title{
+  font-size: 25px;
+  line-height: 40px;
+  margin-block-start: 30px;
+}
+
+.infoSection{
+  padding: 10px 15px;
+  border: 1px solid #D1D2D6;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+}
